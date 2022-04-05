@@ -67,8 +67,8 @@ li a:hover {
 }
 
 .buttons:hover {
-    background-color: #9aac93;
-    transform: scale(110%);
+    background-color: #879783;
+    transform: scale(115%);
     color: black;
 }
 
@@ -78,6 +78,9 @@ li a:hover {
     padding-bottom: 50px;
 }
 
+img:hover{
+    transform: scale(120%);
+}
 /* animation */
 
 body,
