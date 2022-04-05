@@ -1,18 +1,119 @@
-.topbar {
-    background-color: #8E7A6B;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+.body {
+    background-color: rgb(255, 255, 255);
 }
 
-.button {
+.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #7b8379;
+}
+
+li {
     float: left;
+}
+
+li a {
+    display: block;
     color: white;
-    padding: 15px 16px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-.button:hover {
-    background-color: #b69c87;
-    transform: scale(115%);
+li a:hover {
+    background-color: #9aac93;
+    transform: scale(110%);
+    color: black;
+}
+
+.container {
+    padding-top: 50px;
+    margin: auto;
+}
+
+.col {
+    padding-top: 40px;
+}
+
+.card-header {
+    text-align: center;
+    color: white;
+
+}
+
+.card-body {
+    background-color: white;
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttons {
+    background-color:#50574e;
+    color: white;
+
+}
+
+.buttons:hover {
+    background-color: #9aac93;
+    transform: scale(110%);
+    color: black;
+}
+
+
+
+/* animation */
+
+body,
+html {
+    height: 50%;
+}
+
+.hero-image {
+    background-color: #9aac93;
+    height: 70%;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.typewriter h1 {
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #9aac93;
+    }
 }
