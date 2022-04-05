@@ -2,6 +2,12 @@
     background-color: rgb(255, 255, 255);
 }
 
+.stickTop{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .topnav {
     list-style-type: none;
     overflow: hidden;
@@ -66,6 +72,11 @@ li a:hover {
     color: black;
 }
 
+.projects-left {
+    transform: translateX(-100px);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
 
 
 /* animation */
@@ -90,10 +101,13 @@ html {
 }
 
 .typewriter h1 {
+    overflow: hidden;
+    /* border-right: .1em solid rgb(145, 177, 144); */
     white-space: nowrap;
+    margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 2s steps(40, end),
-        blink-caret .75s step-end infinite;
+    blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -114,6 +128,6 @@ html {
     }
 
     50% {
-        border-color: #9aac93;
+        border-color: white;
     }
 }
