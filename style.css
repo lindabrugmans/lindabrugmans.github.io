@@ -43,7 +43,6 @@ li a:hover {
 .card-header {
     text-align: center;
     color: white;
-
 }
 
 .card-body {
@@ -67,14 +66,14 @@ li a:hover {
 }
 
 .buttons:hover {
-    background-color: #879783;
+    background-color: #91a08d;
     transform: scale(115%);
     color: black;
 }
 
 .projects-left {
     transform: translateX(-100px);
-    padding-top: 30px;
+    padding-top: 300px;
     padding-bottom: 50px;
 }
 
