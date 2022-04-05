@@ -73,13 +73,14 @@ li a:hover {
 
 .projects-left {
     transform: translateX(-100px);
-    padding-top: 300px;
+    padding-top: 55px;
     padding-bottom: 50px;
 }
 
 img:hover{
     transform: scale(120%);
 }
+
 /* animation */
 
 body,
