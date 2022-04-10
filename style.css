@@ -2,7 +2,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.stickTop{
+.stickTop {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -47,7 +47,7 @@ li a:hover {
 
 .card-body {
     background-color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .card-footer {
@@ -60,7 +60,7 @@ li a:hover {
 }
 
 .buttons {
-    background-color:#50574e;
+    background-color: #50574e;
     color: white;
 
 }
@@ -77,8 +77,61 @@ li a:hover {
     padding-bottom: 50px;
 }
 
-img:hover{
-    transform: scale(120%);
+img:hover {
+    transform: scale(110%);
+    transition: 1s;
+}
+
+.shineimg {
+    padding-bottom: 30px;
+}
+
+.bars {
+    width: 750px;
+    height: 15px;
+    transform: translateX(90px);
+
+}
+
+.introduction {
+    width: 620px;
+    font-size: 25px;
+    height: 410px;
+    text-align: left;
+    transform: translateX(150px) translateY(40px);
+}
+
+.imgblock {
+    height: 444px;
+    transform: translateX(-130px);
+    width: 600px;
+    color: white;
+}
+
+.aboutmeimg {
+    transition: 1s;
+    color: white;
+}
+
+.aboutmeimg:hover {
+    transform: scale(100%);
+    transition: 1s;
+}
+
+.aboutme {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.resume {
+    transform: translateX(50px);
+    background-color: #50574e;
+    color: white;
+    text-decoration: none;
+}
+
+.resume:hover {
+    background-color: #91a08d;
 }
 
 /* animation */
@@ -109,7 +162,7 @@ html {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 2s steps(40, end),
-    blink-caret .75s step-end infinite;
+        blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
