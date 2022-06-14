@@ -26,7 +26,7 @@ li a:hover {
     color: black;
 }
 
-/* about me container */
+/* about me */
 .introduction {
     height: 450px;
 }
@@ -78,7 +78,7 @@ li a:hover {
     font-size: 17px;
 }
 
-/*
+/* old code */
 .container {
     padding-top: 50px;
     margin: auto;
@@ -184,7 +184,7 @@ img:hover {
 
 /* Hero */
 
-/* body,
+body,
 html {
     height: 50%;
 }
@@ -201,4 +201,4 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-} */
+}
