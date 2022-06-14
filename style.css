@@ -1,17 +1,7 @@
-.body {
-    background-color: rgb(255, 255, 255);
-}
-
-.stickTop {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
+/* Navigation */
 .topnav {
     list-style-type: none;
     overflow: hidden;
-    background-color: #7b8379;
 }
 
 li {
@@ -20,17 +10,35 @@ li {
 
 li a {
     display: block;
-    color: white;
-    padding: 14px 16px;
+    color: black;
+    background-color: #9aac93;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #9aac93;
-    transform: scale(110%);
+    transform: scale(105%);
     color: black;
 }
 
+/* introduction */
+.introduction {
+    background-color: #9aac93;
+    height: 450px;
+    /* margin-top: -px; */
+}
+
+.intro {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 10px;
+}
+
+/*
 .container {
     padding-top: 50px;
     margin: auto;
@@ -134,7 +142,7 @@ img:hover {
     background-color: #91a08d;
 }
 
-/* animation */
+/* Hero */
 
 body,
 html {
@@ -155,34 +163,4 @@ html {
     color: white;
 }
 
-.typewriter h1 {
-    overflow: hidden;
-    /* border-right: .1em solid rgb(145, 177, 144); */
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 2s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: white;
-    }
-}
+*/
