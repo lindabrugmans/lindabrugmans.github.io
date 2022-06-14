@@ -18,7 +18,7 @@ li a {
     margin-right: 5px;
     margin-left: 5px;
     text-decoration: none;
-    font-weight:600;
+    font-weight: 600;
 }
 
 li a:hover {
@@ -28,9 +28,7 @@ li a:hover {
 
 /* about me container */
 .introduction {
-    /* background-color: #9aac93; */
     height: 450px;
-    /* margin-top: px; */
 }
 
 .intro {
@@ -48,16 +46,36 @@ li a:hover {
     font-size: 17px;
 }
 
-.aboutmeimg{
+.aboutmeimg {
     margin-left: 250px;
     margin-top: 100px;
     height: 650px;
+    border: 30px solid #9aac93;
 }
 
-.resumebox{
+.resumebox {
     background-color: #9aac93;
-    height: 412px;
+    height: 402px;
     margin-top: 10px;
+}
+
+/* download resume */
+.ResumeBTN {
+    background-color: #9aac93;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 500px;
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.resumetext {
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 450px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 /*
