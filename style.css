@@ -87,6 +87,29 @@ li a:hover {
     margin-top: 2rem;
 }
 
+/* SPECIFIC PROJECT PAGE */
+
+.projectname {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.subject {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Staatliches', cursive;
+}
+
+.informationbox {
+    margin-top: -1rem;
+    background-color: #afbbaa;
+}
+
 @media (min-width: 750px) {
     /* TABLET */
     /* HOMEPAGE */
@@ -142,6 +165,35 @@ li a:hover {
         height: 41rem;
         margin-top: -37rem;
     }
+
+    /* SPECIFIC PROJECT PAGE */
+
+    .projectname {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .subject {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .informationbox {
+        margin-top: -1rem;
+        height: 47rem;
+        ;
+        background-color: #afbbaa;
+    }
+
+    .imginfo {
+        margin-top: 2.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -188,6 +240,11 @@ li a:hover {
         margin-top: -35rem;
     }
 
+    /* SPECIFIC PROJECTPAGE */
+    .subject,
+    .proinfo {
+        margin-left: 3.5rem;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -233,7 +290,7 @@ li a:hover {
 
     .projectbox {
         background-color: #9aac93;
-        height:40rem;
+        height: 40rem;
         margin-top: -21rem;
     }
 
@@ -246,5 +303,36 @@ li a:hover {
     .card-body {
         font-size: 1.1rem;
         font-weight: 600;
+    }
+
+    /* SPECIFIC PROJECTPAGE */
+    .projectname {
+        margin-top: 0rem;
+        font-size: 6rem;
+        padding-bottom: 1rem;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .subject {
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: 'Staatliches', cursive;
+    }
+
+    .proinfo {
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+
+    .informationbox {
+        margin-top: -1rem;
+        height: 50rem;
+        background-color: #afbbaa;
+    }
+
+    .imginfo {
+        margin-top: 2.5rem;
+        margin-left: 15rem;
     }
 }
