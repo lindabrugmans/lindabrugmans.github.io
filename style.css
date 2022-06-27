@@ -2,6 +2,10 @@ html body {
     background-color: #bac9b3;
 }
 
+.projectpage {
+    background-color: #e6e7e5;
+}
+
 /* Navigation */
 .topnav {
     list-style-type: none;
@@ -30,9 +34,12 @@ li a:hover {
     color: black;
 }
 
-/* HOMEPAGE */
+.active {
+    background-color: #5a6356;
+    color: white;
+}
 
-/* about me */
+/* HOMEPAGE */
 .intro {
     font-weight: 850;
     margin-top: 1.5rem;
@@ -46,7 +53,6 @@ li a:hover {
     font-size: 1rem;
 }
 
-/* green container */
 .resumebox {
     height: 20rem;
     margin-top: -15rem;
@@ -56,9 +62,33 @@ li a:hover {
     border: 0.5rem solid #bac9b3;
 }
 
+/* PROJECTPAGE */
+
+.project {
+    text-align: center;
+    font-weight: 850;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.projectcards {
+    background-color: #9aac93;
+}
+
+.logo {
+    padding-top: 1rem;
+    width: 8rem;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
 @media (min-width: 750px) {
     /* TABLET */
-
     /* HOMEPAGE */
 
     html body {
@@ -80,7 +110,6 @@ li a:hover {
         padding-left: 3rem;
     }
 
-    /* green container */
     .resumebox {
         background-color: #9aac93;
         height: 22.5rem;
@@ -91,6 +120,27 @@ li a:hover {
         margin-top: 7rem;
         background-color: #9aac93;
         border: 2rem solid #9aac93
+    }
+
+    /* PROJECTPAGE */
+
+    .project {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+
+    .projectbox {
+        background-color: #9aac93;
+        height: 41rem;
+        margin-top: -37rem;
     }
 }
 
@@ -130,30 +180,28 @@ li a:hover {
         background-color: #9aac93;
         border: 3rem solid #9aac93
     }
+
 }
 
 @media (min-width: 1440px) {
 
-    /* MONITOR */
-
+    /* 1224 */
     /* HOMEPAGE */
-    /* about me */
     .intro {
         font-weight: 900;
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-bottom: 1.5rem;
         margin-top: 6rem;
-        margin-left: -0.2rem;
+        margin-left: 3rem;
     }
 
     .information {
         font-weight: 700;
         margin-top: 13rem;
         font-size: 1.5rem;
-        margin-left: -0.2rem;
+        margin-left: 3rem;
     }
 
-    /* green container */
     .resumebox {
         height: 37rem;
         margin-top: -26rem;
