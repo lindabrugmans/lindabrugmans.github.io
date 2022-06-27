@@ -233,17 +233,12 @@ li a:hover {
 
     .projectbox {
         background-color: #9aac93;
-        height: 35rem;
+        height:40rem;
         margin-top: -21rem;
     }
 
-    .logo {
-        padding-top: 1rem;
-        width: 8rem;
-    }
-
     .card-header {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 800;
         margin-top: 2rem;
     }
