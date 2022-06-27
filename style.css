@@ -181,6 +181,13 @@ li a:hover {
         border: 3rem solid #9aac93
     }
 
+    /* ProjectPage */
+
+    .projectbox {
+        height: 41rem;
+        margin-top: -35rem;
+    }
+
 }
 
 @media (min-width: 1440px) {
@@ -209,5 +216,19 @@ li a:hover {
 
     .aboutmeimg {
         margin-top: 0rem;
+    }
+
+    /* ProjectPage */
+
+    .project {
+        padding-bottom: 1rem;
+    }
+
+    .projectcards {
+        margin-top: 3rem;
+    }
+
+    .projectbox {
+        margin-top: -4rem;
     }
 }
