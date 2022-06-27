@@ -221,14 +221,35 @@ li a:hover {
     /* ProjectPage */
 
     .project {
+        font-size: 3.5rem;
         padding-bottom: 1rem;
     }
 
     .projectcards {
-        margin-top: 3rem;
+        background-color: #9aac93;
+        margin-top: 2rem;
+
     }
 
     .projectbox {
-        margin-top: -4rem;
+        background-color: #9aac93;
+        height: 35rem;
+        margin-top: -21rem;
+    }
+
+    .logo {
+        padding-top: 1rem;
+        width: 8rem;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin-top: 2rem;
+    }
+
+    .card-body {
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 }
