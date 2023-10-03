@@ -2,6 +2,61 @@ html body {
     background-color: #bac9b3;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cookiePopup {
+    background-color: #bac9b3;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42rem;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+}
+
+#cookiePopup p {
+    text-align: center;
+    margin: 1.4em 0;
+}
+
+#cookiePopup a {
+    color: #9aac93;
+}
+
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+
+#cookiePopup button {
+    background-color: #5a6356;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/* below needs to be updated  */
+
 .projectpage {
     background-color: #e6e7e5;
 }
@@ -110,7 +165,7 @@ li a:hover {
     background-color: #afbbaa;
 }
 
-.projectlink{
+.projectlink {
     text-decoration: none;
     color: grey
 }
