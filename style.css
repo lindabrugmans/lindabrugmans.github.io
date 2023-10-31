@@ -1,398 +1,70 @@
-html body {
-    background-color: #bac9b3;
+:root {
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Gambetta', serif;
+    --text-color: white;
+    --primary-color: #2C3639;
+    --secondary-color: #3F4E4F;
+    --tertaire-color: #A27B5C;
 }
 
-* {
-    padding: 0;
+body {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--primary-color);
 }
 
-#cookiePopup {
-    background-color: #bac9b3;
-    position: absolute;
-    font-size: 14px;
-    width: 70vw;
-    max-width: 42rem;
-    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-    text-align: justify;
-    line-height: 1.8em;
-    padding: 2em 1.4em;
-    border-radius: 6px;
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0.5rem 0.5rem;
 }
 
-#cookiePopup p {
-    text-align: center;
-    margin: 1.4em 0;
-}
-
-#cookiePopup a {
-    color: #9aac93;
-}
-
-.hide {
-    visibility: hidden;
-    bottom: 0;
-    right: 2em;
-}
-
-.show {
-    visibility: visible;
-    bottom: 2em;
-    right: 2em;
-}
-
-#cookiePopup button {
-    background-color: #5a6356;
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    padding: 1em 1.4em;
-    display: block;
-    position: relative;
-    margin: auto;
-    border-radius: 5px;
-}
-
-
-/* below needs to be updated  */
-
-.projectpage {
-    background-color: #e6e7e5;
-}
-
-/* Navigation */
-.topnav {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    background-color: #9aac93;
+.nav-item {
+    color: var(--text-color);
+    list-style: none;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    margin-right: 1.5rem;
-    margin-left: -1rem;
+}
+
+.nav-item a {
+    color: var(--text-color);
     text-decoration: none;
-    font-weight: 37rem;
 }
 
-li a:hover {
-    transform: scale(105%);
-    color: black;
+.nav-item:first-child {
+    margin-right: auto;
 }
 
-.active {
-    background-color: #5a6356;
-    color: white;
+.nav-item:nth-child(4) {
+    margin-left: auto;
 }
 
-/* HOMEPAGE */
-.intro {
-    font-weight: 850;
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+/* test */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
-.information {
-    text-align: left;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-.resumebox {
-    height: 20rem;
-    margin-top: -15rem;
-}
-
-.aboutmeimg {
-    border: 0.5rem solid #bac9b3;
-}
-
-/* PROJECTPAGE */
-
-.project {
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #A27B5C;
+    outline: none;
     text-align: center;
-    font-weight: 850;
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
 }
 
-.projectcards {
-    background-color: #9aac93;
-}
-
-.logo {
-    padding-top: 1rem;
-    width: 8rem;
-}
-
-.card-header {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-top: 2rem;
-}
-
-/* SPECIFIC PROJECT PAGE */
-
-.projectname {
-    text-align: center;
-    font-weight: 700;
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
-    font-family: 'Staatliches', cursive;
-}
-
-.subject {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: 'Staatliches', cursive;
-}
-
-.informationbox {
-    margin-top: -1rem;
-    background-color: #afbbaa;
-}
-
-.projectlink {
-    text-decoration: none;
-    color: grey
-}
-
-@media (min-width: 750px) {
-    /* TABLET */
-    /* HOMEPAGE */
-
-    html body {
-        background-color: #e6e7e5;
-    }
-
-    /* about me */
-    .intro {
-        font-weight: 850;
-        padding-left: 3rem;
-        margin-top: 8rem;
-        font-size: 3rem;
-    }
-
-    .information {
-        margin-top: 4rem;
-        font-weight: 750;
-        font-size: 1.1rem;
-        padding-left: 3rem;
-    }
-
-    .resumebox {
-        background-color: #9aac93;
-        height: 22.5rem;
-        margin-top: -19rem;
-    }
-
-    .aboutmeimg {
-        margin-top: 7rem;
-        background-color: #9aac93;
-        border: 2rem solid #9aac93
-    }
-
-    /* PROJECTPAGE */
-
-    .project {
-        font-weight: 900;
-        font-size: 3rem;
-    }
-
-    .logo {
-        width: 7rem;
-    }
-
-    .card-header {
-        font-size: 1.3rem;
-    }
-
-    .projectbox {
-        background-color: #9aac93;
-        height: 41rem;
-        margin-top: -37rem;
-    }
-
-    /* SPECIFIC PROJECT PAGE */
-
-    .projectname {
-        text-align: center;
-        font-weight: 700;
-        margin-top: 0.5rem;
-        font-size: 2.5rem;
-        padding-bottom: 3rem;
-        font-family: 'Staatliches', cursive;
-    }
-
-    .subject {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-        font-family: 'Staatliches', cursive;
-    }
-
-    .informationbox {
-        margin-top: -1rem;
-        height: 47rem;
-        ;
-        background-color: #afbbaa;
-    }
-
-    .imginfo {
-        margin-top: 2.5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-
-    /* LAPTOP */
-
-    /* HOMEPAGE */
-    html body {
-        background-color: #e6e7e5;
-    }
-
-    /* about me */
-    .intro {
-        font-weight: 850;
-        margin-left: 3rem;
-        margin-top: 10rem;
-        font-size: 4rem;
-    }
-
-    .information {
-        margin-top: 6rem;
-        font-weight: 750;
-        font-size: 1.2rem;
-        margin-left: 3rem;
-    }
-
-    /* green container */
-    .resumebox {
-        background-color: #9aac93;
-        height: 25rem;
-        margin-top: -25rem;
-    }
-
-    .aboutmeimg {
-        margin-top: 7rem;
-        background-color: #9aac93;
-        border: 3rem solid #9aac93
-    }
-
-    /* ProjectPage */
-
-    .projectbox {
-        height: 41rem;
-        margin-top: -35rem;
-    }
-
-    /* SPECIFIC PROJECTPAGE */
-    .subject,
-    .proinfo {
-        margin-left: 3.5rem;
-    }
-}
-
-@media (min-width: 1440px) {
-
-    /* 1224 */
-    /* HOMEPAGE */
-    .intro {
-        font-weight: 900;
-        font-size: 4.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 6rem;
-        margin-left: 3rem;
-    }
-
-    .information {
-        font-weight: 700;
-        margin-top: 13rem;
-        font-size: 1.5rem;
-        margin-left: 3rem;
-    }
-
-    .resumebox {
-        height: 37rem;
-        margin-top: -26rem;
-    }
-
-    .aboutmeimg {
-        margin-top: 0rem;
-    }
-
-    /* ProjectPage */
-
-    .project {
-        font-size: 3.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .projectcards {
-        background-color: #9aac93;
-        margin-top: 2rem;
-
-    }
-
-    .projectbox {
-        background-color: #9aac93;
-        height: 39rem;
-        margin-top: -21rem;
-    }
-
-    .card-header {
-        font-size: 1rem;
-        font-weight: 800;
-        margin-top: 2rem;
-    }
-
-    .card-body {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-
-    /* SPECIFIC PROJECTPAGE */
-    .projectname {
-        margin-top: 0rem;
-        font-size: 6rem;
-        padding-bottom: 1rem;
-        font-family: 'Staatliches', cursive;
-    }
-
-    .subject {
-        margin-top: 1rem;
-        font-size: 3rem;
-        font-weight: 700;
-        font-family: 'Staatliches', cursive;
-    }
-
-    .proinfo {
-        margin-top: 1rem;
-        font-weight: 600;
-    }
-
-    .informationbox {
-        margin-top: -1rem;
-        height: 50rem;
-        background-color: #afbbaa;
-    }
-
-    .imginfo {
-        margin-top: 2.5rem;
-        margin-left: 15rem;
-    }
+h1:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
 }
