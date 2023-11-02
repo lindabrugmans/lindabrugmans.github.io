@@ -64,6 +64,7 @@ body {
     color: #A27B5C;
     outline: none;
     text-align: center;
+    
 }
 
 .animation:hover {
@@ -72,21 +73,21 @@ body {
 } 
 
 /* end of animation */
-/* 
+
 svg {
     width: 100%;
-    height: 100%;
+    height: 10%;
 }
 
 svg text {
     text-transform: uppercase;
     letter-spacing: 5px;
-    stroke: white;
+    stroke: #c39976;
     font-size: 50px;
     font-weight: 700;
     stroke-width: 1;
     
-    animation: textAnimate 5s infinite alternate;
+    animation: textAnimate 10s infinite alternate;
 }
 
 @keyframes textAnimate {
@@ -101,4 +102,4 @@ svg text {
         stroke-dashoffstet: -20%;
         fill: #a78d783e
     }
-} */
+}
