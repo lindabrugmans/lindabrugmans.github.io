@@ -54,7 +54,7 @@ body {
 
 /* animation frontpage */
 
-.animation{
+.animation text{
     font-size: 60px;
     text-transform: uppercase;
     letter-spacing: -2px;
@@ -67,7 +67,7 @@ body {
     
 }
 
-.animation:hover {
+.animation text:hover {
     font-variation-settings: "wght" 582;
     letter-spacing: 1px;
 } 
