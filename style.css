@@ -29,7 +29,6 @@ body {
     margin: 0;
     padding: 0.5rem 0.5rem;
     text-transform: uppercase;
-
 }
 
 .nav-item {
@@ -53,19 +52,17 @@ body {
 
 
 
-/* animation frontpage */
+/* animations */
 
 .animation text {
-    font-size: 60px;
+    font-size: 65px;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
-    margin-bottom: 0.8rem;
     color: #A27B5C;
-    outline: none;
-    text-align: center;
-
+    /* outline: none; */
+    /* text-align: center; */
 }
 
 .animation text:hover {
@@ -73,21 +70,15 @@ body {
     letter-spacing: 1px;
 }
 
-/* end of animation */
-
 svg {
     width: 100%;
     height: 10%;
 }
 
 svg text {
-    text-transform: uppercase;
-    letter-spacing: 5px;
     stroke: #c39976;
-    font-size: 50px;
     font-weight: 700;
     stroke-width: 1;
-
     animation: textAnimate 10s infinite alternate;
 }
 
@@ -105,10 +96,25 @@ svg text {
     }
 }
 
-@media (min-width: 650px) {}
+/* breakpoints */
+
+@media (min-width: 650px) {
+    .animation text {
+        font-size: 80px;
+    }
+
+}
 
 @media (min-width: 1280px) {
     body {
         font-size: 20px;
+    }
+
+    .animation text {
+        font-size: 100px;
+    }
+
+    .nav {
+        text-transform: none;
     }
 }
