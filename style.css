@@ -4,6 +4,7 @@
     --primary-color: #2C3639;
     --secondary-color: #3F4E4F;
     --tertaire-color: #A27B5C;
+    --quaternary-color: #c39976;
 }
 
 body {
@@ -20,6 +21,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+/* Navigation */
 
 .nav {
     align-items: center;
@@ -50,9 +53,7 @@ body {
     margin-left: auto;
 }
 
-
-
-/* animations */
+/* Animations Homepage Title*/
 
 .animation text {
     font-size: 65px;
@@ -60,9 +61,7 @@ body {
     letter-spacing: -1px;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
-    color: #A27B5C;
-    /* outline: none; */
-    /* text-align: center; */
+    color: var(--tertaire-color);
 }
 
 .animation text:hover {
@@ -94,6 +93,57 @@ svg text {
         stroke-dashoffstet: -20%;
         fill: var(--primary-color)
     }
+}
+
+/* About Me */
+
+/* .aboutContainer{
+    background-color:var(--tertaire-color);
+    height:75%;
+    width: 80%; 
+    border-radius: 4rem;
+    display:flex;
+    align-self: center;
+} */
+
+/* Projects */
+
+.containerProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -6rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.containerProject h2 {
+    text-decoration: underline;
+    color: var(--tertaire-color);
+    text-transform: uppercase;
+
+}
+
+.projects div {
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 0 1 calc(50% - 1rem);
+    margin: 1rem .25rem;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    box-shadow: 2px 2px 5px black;
 }
 
 /* breakpoints */
