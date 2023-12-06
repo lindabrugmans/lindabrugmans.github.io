@@ -53,6 +53,63 @@ body {
     margin-left: auto;
 }
 
+/* About Me */
+
+/* .aboutContainer{
+    background-color:var(--tertaire-color);
+    height:75%;
+    width: 80%; 
+    border-radius: 4rem;
+    display:flex;
+    align-self: center;
+} */
+
+/* Projects */
+
+.containerProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -10rem;
+}
+
+.containerProject h2 {
+    color: var(--tertaire-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.projects div {
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 4rem;
+    flex: 0 1 calc(50% - 1rem);
+    margin: 1rem .25rem;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    box-shadow: 2px 2px 5px black;
+}
+
+/* ANIMATIONS. */
+
 /* Animations Homepage Title*/
 
 .animation text {
@@ -95,62 +152,41 @@ svg text {
     }
 }
 
-/* About Me */
+/* Fading in + out */
 
-/* .aboutContainer{
-    background-color:var(--tertaire-color);
-    height:75%;
-    width: 80%; 
-    border-radius: 4rem;
-    display:flex;
-    align-self: center;
-} */
-
-/* Projects */
-
-.containerProject {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    margin-top: -6rem;
+.fade {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: space-between;
-}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
 
-.containerProject h2 {
-    text-decoration: underline;
-    color: var(--tertaire-color);
-    text-transform: uppercase;
+    to {
+        opacity: 1;
+    }
 
-}
-
-.projects div {
-    color: var(--text-color);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: 100%;
-    flex: 0 1 calc(50% - 1rem);
-    margin: 1rem .25rem;
-    border-radius: 5px;
-    background: var(--secondary-color);
-    box-shadow: 2px 2px 5px black;
+    0% {
+        opacity: 0;
+    }
 }
 
 /* breakpoints */
 
 @media (min-width: 650px) {
+    .containerProject {
+        margin-top: -10rem;
+    }
+
     .animation text {
         font-size: 80px;
+    }
+
+    .projects div {
+        flex: 0 1 calc(25% - 1rem);
     }
 
 }
