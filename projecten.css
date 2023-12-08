@@ -1,0 +1,17 @@
+.BottomContainer {
+    margin: -50% 0% 0% 0%;
+}
+
+/* breakpoints */
+@media (min-width: 650px) {}
+
+@media (min-width: 1024px) {
+    .BottomContainer {
+        margin: -0% 0% 0% 0%;
+        font-size:20px;
+    }
+
+
+}
+
+@media (min-width: 1280px) {}
