@@ -54,7 +54,7 @@ body {
     margin-right: auto;
 }
 
-.nav-item:nth-child(4) {
+.nav-item:nth-child(3) {
     margin-left: auto;
 }
 
@@ -137,12 +137,11 @@ body {
     text-decoration: none;
 }
 
-.contactInformation p,
-a {
+.contactInformation p, .contactInformation a{
     color: var(--tertaire-color);
     font-size: medium;
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
     padding-top: 10px;
 }
 
@@ -260,6 +259,13 @@ svg text {
     }
 }
 
+@media (min-width: 1024px){
+    .about img {
+        width: 30%;
+        margin: 2% 5% 0% 10%;
+    }
+}
+
 @media (min-width: 1280px) {
     body {
         font-size: 20px;
@@ -275,7 +281,7 @@ svg text {
 
     .about img {
         width: 25%;
-        margin: 0% 5% 0% 10%;
+        margin: -1% 5% 0% 10%;
     }
 
     .imgrow p{
