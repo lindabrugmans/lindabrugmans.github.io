@@ -22,8 +22,13 @@ body {
     justify-content: center;
 }
 
-/* Navigation */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px 0px 5px;
+}
 
+/* Navigation */
 .nav {
     align-items: center;
     display: flex;
@@ -53,30 +58,15 @@ body {
     margin-left: auto;
 }
 
-/* About Me */
-
-/* .aboutContainer{
-    background-color:var(--tertaire-color);
-    height:75%;
-    width: 80%; 
-    border-radius: 4rem;
-    display:flex;
-    align-self: center;
-} */
-
 /* Projects */
-
-.containerProject {
+.BottomContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    margin-top: -15rem;
 }
 
-.containerProject h2 {
+.BottomContainer h2 {
     color: var(--tertaire-color);
     text-transform: uppercase;
     text-decoration: none;
@@ -98,6 +88,7 @@ body {
     color: var(--text-color);
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
     height: 4rem;
@@ -108,11 +99,59 @@ body {
     box-shadow: 2px 2px 5px black;
 }
 
+/* About Me */
+.about {
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about h1 {
+    color: var(--tertaire-color);
+}
+
+.about p {
+    text-align: left;
+    margin: 1rem;
+}
+
+.about span {
+    color: var(--quaternary-color);
+}
+
+.about img {
+    width: 60%;
+    margin: 0% 20% 0% 20%;
+    border-radius: 1rem;
+}
+
+.contact {
+    background-color: #1a20216a;
+    height: 5rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.contactInformation p,
+a {
+    color: var(--tertaire-color);
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+
 /* ANIMATIONS. */
 
 /* Animations Homepage Title*/
-
 .animation text {
+    margin-top: -50rem;
     font-size: 65px;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -152,15 +191,21 @@ svg text {
     }
 }
 
-/* Fading in + out */
-
-.fade {
-    animation: fade linear both;
+/* Fading Animation*/
+.fade-in {
+    animation: fade-in linear both;
     animation-timeline: view();
-    animation-range: entry 50% cover 50%;
+    animation-range: entry 40% cover 40%;
 }
 
-@keyframes fade {
+.containerFade {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+
+@keyframes fade-in {
     from {
         opacity: 0;
     }
@@ -175,7 +220,6 @@ svg text {
 }
 
 /* breakpoints */
-
 @media (min-width: 650px) {
     .containerProject {
         margin-top: -10rem;
@@ -189,6 +233,31 @@ svg text {
         flex: 0 1 calc(25% - 1rem);
     }
 
+    .contactInformation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactInformation a,
+    p {
+        margin: 0px 5px 0px 5px;
+    }
+
+    .about img {
+        width: 40%;
+        margin: 0% 5% 0% 0%;
+    }
+
+    .imgrow{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgrow p{
+        margin: 10% 5% 5% 5%;
+        font-size:25px;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -202,5 +271,14 @@ svg text {
 
     .nav {
         text-transform: none;
+    }
+
+    .about img {
+        width: 25%;
+        margin: 0% 5% 0% 10%;
+    }
+
+    .imgrow p{
+        font-size:30px;
     }
 }
