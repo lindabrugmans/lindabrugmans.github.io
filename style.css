@@ -137,7 +137,8 @@ body {
     text-decoration: none;
 }
 
-.contactInformation p, .contactInformation a{
+.contactInformation p,
+.contactInformation a {
     color: var(--tertaire-color);
     font-size: medium;
     font-weight: bold;
@@ -175,18 +176,18 @@ body {
         margin: 0% 5% 0% 0%;
     }
 
-    .imgrow{
+    .imgrow {
         display: flex;
         flex-direction: row;
     }
 
-    .imgrow p{
+    .imgrow p {
         margin: 10% 5% 5% 5%;
-        font-size:25px;
+        font-size: 25px;
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .about img {
         width: 30%;
         margin: 2% 5% 0% 10%;
@@ -211,7 +212,7 @@ body {
         margin: -1% 5% 0% 10%;
     }
 
-    .imgrow p{
-        font-size:30px;
+    .imgrow p {
+        font-size: 30px;
     }
 }
