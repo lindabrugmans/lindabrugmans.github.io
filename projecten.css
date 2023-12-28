@@ -1,9 +1,12 @@
 .BottomContainer {
-    margin: -50% 0% 0% 0%;
+    margin: -80% 0% 0% 0%;
+}
+
+.animationProject text {
+    font-size: 35px !important;
 }
 
 /* Information */
-
 .information {
     background-color: var(--secondary-color);
     height: 100%;
@@ -47,8 +50,32 @@
     margin-left: 5%;
 }
 
+.imageInformation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imageInformation h2 {
+    color: var(--tertaire-color);
+    text-decoration: underline;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
+
 /* breakpoints */
 @media (min-width: 650px) {
+    .imageInformation {
+        margin-bottom: 5%;
+    }
+
+    .animationProject text {
+        font-size: 45px !important;
+    }
+
     .informationExtra {
         display: flex;
         flex-direction: row;
@@ -69,6 +96,15 @@
 }
 
 @media (min-width: 1024px) {
+    .imageInformation {
+        margin-top:5%;
+        margin-bottom: 10%;
+    }
+
+    .animationProject text {
+        font-size: 50px !important;
+    }
+
     .BottomContainer {
         margin: -0% 0% 0% 0%;
         font-size: 20px;
@@ -80,19 +116,26 @@
     }
 
     .projectImages {
-        padding: 5% 5% 5% 5%;
+        padding: 0% 5% 0% 5%;
     }
 
     .projectImages img {
-        height: 60%;
-        width: 60%;
+        height: 55%;
+        width: 55%;
     }
 }
 
 @media (min-width: 1280px) {
+    .animationProject text {
+        font-size: 60px !important;
+    }
 
     .projectImages img {
         height: 47%;
         width: 47%;
+    }
+
+    .imageInformation{
+        margin-top:10%;
     }
 }
