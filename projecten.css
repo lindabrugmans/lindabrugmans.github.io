@@ -42,6 +42,11 @@
     font-size: 20px;
 }
 
+.information a{
+    text-decoration: none;
+    color: var(--tertaire-color);
+    font-style: italic;
+}
 
 /* Images Project */
 .projectImages img {
