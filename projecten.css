@@ -68,6 +68,10 @@
     display: flex;
 }
 
+.fitphone{
+    margin-left:10%;
+}
+
 /* breakpoints */
 @media (min-width: 650px) {
     .imageInformation {
