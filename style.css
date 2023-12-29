@@ -24,8 +24,21 @@ body {
 
 .row {
     display: flex;
+    flex-direction: column;
+    margin: 5px 5px 0px 5px;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rowContact {
+    display: flex;
     flex-direction: row;
     margin: 5px 5px 0px 5px;
+
 }
 
 .scroll::-webkit-scrollbar {
@@ -34,11 +47,7 @@ body {
 
 .scroll {
     -ms-overflow-style: none;
-    /* IE and Edge /
-    scrollbar-width: none;
-    / Firefox */
 }
-
 
 /* Navigation */
 .nav {
@@ -160,6 +169,15 @@ body {
 
 /* breakpoints */
 @media (min-width: 650px) {
+    .col img {
+        height: 90%;
+        width:90% !important;
+    }
+
+    .col {
+        width: 50%;
+    }
+
     .containerProject {
         margin-top: -10rem;
     }
@@ -207,6 +225,11 @@ body {
 }
 
 @media (min-width: 1280px) {
+    .col img {
+        margin-top: 0%;
+        width:60% !important;
+    }
+
     body {
         font-size: 20px;
     }
