@@ -68,15 +68,6 @@
     display: flex;
 }
 
-.pvk {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 1%;
-}
-
 /* breakpoints */
 @media (min-width: 650px) {
     .imageInformation {
@@ -160,12 +151,16 @@
     }
 
     .fitphone {
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
         align-items: left;
         justify-content: left;
-        margin-left: -7%;
-        margin-right: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
         flex-direction: row;
+    }
+
+    .fitphone img{
+        margin:1%;
     }
 }
