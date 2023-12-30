@@ -68,8 +68,9 @@
     display: flex;
 }
 
-.fitphone{
-    margin-left:10%;
+.fitphone,
+.cat {
+    margin-left: 10%;
 }
 
 /* breakpoints */
@@ -147,7 +148,7 @@
     .projectImages img {
         height: 40%;
         width: 40%;
-        margin-top:1%;
+        margin-top: 1%;
     }
 
     .imageInformation {
@@ -164,7 +165,12 @@
         flex-direction: row;
     }
 
-    .fitphone img{
-        margin:1%;
+    .fitphone img {
+        margin: 1%;
+    }
+
+    .cat{
+        margin-left:0%;
+        height:75%;
     }
 }
