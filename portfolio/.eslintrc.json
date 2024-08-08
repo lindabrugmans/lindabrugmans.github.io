@@ -1,3 +1,110 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "camelcase": "off",
+    "no-undef": "off",
+    "@typescript-eslint/indent": ["error", 2],
+    "react/jsx-pascal-case": "off",
+    "object-curly-newline": ["error", { "consistent": true, "multiline": true }],
+    "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/require-default-props": "off",
+    "max-len": "off",
+    "no-use-before-define": "off",
+    "object-property-newline": "off",
+    "linebreak-style": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/no-array-index-key": "off",
+    "no-trailing-spaces": "error",
+    "import/no-cycle": "off",
+    "react/jsx-indent": [2, 2, { "indentLogicalExpressions": true }],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-props-no-spreading": "off",
+    "@next/next/no-head-element": "off",
+    "react/no-danger": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off",
+    "no-unused-vars": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/declare/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/hooks/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/lib/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/shared/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
 }
