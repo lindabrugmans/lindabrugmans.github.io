@@ -1,16 +1,13 @@
-import Image from 'next/image';
-
-import Text from '@/components/Text/TextCol1';
+// import Image from 'next/image';
+import Button from '@/shared/Button/Button';
 
 import styles from './page.module.css';
 
 export default function Home() {
   return (
-
-    <Text
-      title="test"
-      subtitle="test"
-    />
+    <div>
+      <Button text="Primary button" />
+    </div>
 
   // <main className={styles.main}>
   //   <div className={styles.description}>

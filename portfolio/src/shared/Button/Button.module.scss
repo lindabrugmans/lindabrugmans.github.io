@@ -1,0 +1,23 @@
+.button {
+  padding: 0 16px;
+
+  width: fit-content;
+  min-width: 54px;
+  height: 30px;
+
+  color: white;
+
+  background-color: black;
+
+  // cursor: pointer;
+
+  border-radius: 999px;
+
+  &:hover {
+    color: black;
+
+    background-color: white;
+
+    border: 1px black solid;
+  }
+}
