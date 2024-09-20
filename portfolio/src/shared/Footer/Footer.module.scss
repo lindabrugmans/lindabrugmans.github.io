@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+
+  color: var(--white);
+
+  background-color: var(--black);
+
+  .footerText {
+    grid-column: span 12;
+
+    margin-left: 15px;
+  }
+}
