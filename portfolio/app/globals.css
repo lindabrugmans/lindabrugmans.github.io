@@ -1,26 +1,30 @@
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import "https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+:root {
+  --black: #10100f;
+  --white: #ffffff;
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  @media (width >= 769px) {
+    body {
+      font-size: 15px;
+    }
+  }
+
+  @media (width >= 1024px) {
+    body {
+      font-size: 16px;
+    }
   }
 }
-
-body {
-  margin: 0 !important;
-
-  color: rgb(var(--foreground-rgb));
-
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
