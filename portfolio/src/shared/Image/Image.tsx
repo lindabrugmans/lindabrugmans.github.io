@@ -1,6 +1,7 @@
 import NextImage from 'next/image';
 
 import styles from './Image.module.scss';
+import clsx from 'clsx';
 
 interface ImageProps {
   image: {
@@ -10,16 +11,18 @@ interface ImageProps {
   },
   altImg: string,
   className?: string,
+  grayscale?: boolean
 }
 
-export default function Image({ image, altImg, className }: ImageProps) {
+export default function Image({ image, altImg, className, grayscale }: ImageProps) {
   return (
     <NextImage
       src={image.src}
       height={image.height}
       width={image.width}
       alt={altImg}
-      className={`${styles.image} ${className}`}
+      className={clsx(styles.image, className, { [styles.grayscale]: grayscale })}
+      layout="responsive"
     />
   );
 }
