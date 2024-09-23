@@ -11,17 +11,18 @@ interface ImageProps {
   },
   altImg: string,
   className?: string,
+  fullscreen?: boolean,
   grayscale?: boolean
 }
 
-export default function Image({ image, altImg, className, grayscale }: ImageProps) {
+export default function Image({ image, altImg, className, fullscreen, grayscale }: ImageProps) {
   return (
     <NextImage
       src={image.src}
       height={image.height}
       width={image.width}
       alt={altImg}
-      className={clsx(styles.image, className, { [styles.grayscale]: grayscale })}
+      className={clsx(styles.image, className, { [styles.fullscreen]: fullscreen }, { [styles.grayscale]: grayscale })}
       layout="responsive"
     />
   );
